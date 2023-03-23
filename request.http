@@ -1,0 +1,25 @@
+### Get Jobs
+GET http://localhost:3000/user/1
+
+### Create Job
+POST http://localhost:3003/api/jobs
+content-type: application/json
+
+{
+    "company": "Temirtau23",
+    "geography": "Budju, USA",
+    "jobLink": "https://devrelcareers.com/job/8",
+    "title": "Full Stack"
+}
+
+### Put Job
+PUT http://localhost:3003/api/jobs/rec_cgc8ln9fqf8i4gnel8e0
+content-type: application/json
+
+{
+    "company": "ITVDN33"
+}
+
+### Delete Job
+DELETE http://localhost:3003/api/jobs/rec_cgc9e9qtft8hg0jj0lq0
+content-type: application/json
