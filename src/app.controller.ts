@@ -3,8 +3,8 @@ import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  @Get()
-  getUser() {
-    return { name: 'John', email: 'john@gmail.com' };
-  }
+    @Get()
+    getUser() {
+        return { name: 'John', email: 'john@gmail.com' };
+    }
 }
