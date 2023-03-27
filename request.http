@@ -1,23 +1,22 @@
 ### Get Jobs
-GET http://localhost:3000/user/1
+GET http://localhost:3000/user
 
 ### Create Job
-POST http://localhost:3000/user
+POST http://localhost:3000/auth/login
 content-type: application/json
 
 {
-    "name": "Miracle",
-    "email": "miracle@gmail.com"
+    "email": "toyota@gmail.com",
+    "password": "toy123"
 }
 
 ### Put Job
-PATCH  http://localhost:3000/user/44
+PATCH  http://localhost:3000/user/2
 content-type: application/json
 
 {
-    "name": "Anki",
-    "email": "anki@gmail.com",
-    "token": "2323"
+    "name": "Donald Trump jr.",
+    "email": "d.trump@gmail.com"
 }
 
 ### Delete Job
