@@ -1,5 +1,22 @@
+
 ### Get Jobs
 GET http://localhost:3000/user
+
+### Get token
+POST  http://localhost:3000/auth/login
+content-type: application/json
+
+{
+    "email": "toyota@gmail.com",
+    "password": "toy123"
+}
+
+### Sign In
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRveW90YUBnbWFpbC5jb20iLCJzdWIiOjQsImlhdCI6MTY4MDAyODU1MywiZXhwIjoxNjgwMDI4NjEzfQ.Gx3rRK4nV2uzoXa18ykhMvktwXUYW9qvcr6gfkPJsnk
+GET  http://localhost:3000/profile
+Content-Type: application/json,
+Authorization: Bearer {{token}}
+
 
 ### Create Job
 POST http://localhost:3000/auth/login
